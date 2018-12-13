@@ -1,9 +1,9 @@
-package Corgi;
+package corgi;
 use strict;
 use warnings;
 use Data::Dumper; 
 
-use parent 'Doggo';
+use parent 'doggo';
 
 sub new {
     my ($class) = @_;

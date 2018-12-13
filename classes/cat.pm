@@ -1,4 +1,4 @@
-package Cat;
+package cat;
 use strict;
 use warnings;
 use Data::Dumper; 

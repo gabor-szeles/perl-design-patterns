@@ -1,8 +1,8 @@
-package ProtectorProxy;
+package protectorproxy;
 use strict;
 use warnings;
 use Data::Dumper; 
-use Corgi;
+use corgi;
 
 my $isOwner;
 
@@ -14,7 +14,7 @@ sub new {
 
 sub authorize () {
     if ($isOwner == 1) {
-        my $corgi = Corgi->new;
+        my $corgi = corgi->new;
         return $corgi;
     } else {
         print Dumper("No corgi for u!");

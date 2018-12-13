@@ -1,16 +1,16 @@
-package CatAdapter;
+package catadapter;
 use strict;
 use warnings;
 use Data::Dumper; 
 
-use parent 'Shibe';
-use Cat;
+use parent 'shibe';
+use cat;
 
 my $cat;
 
 sub new {
     my ($class) = @_;
-    $cat = Cat->new;
+    $cat = cat->new;
     return bless {}, $class;
     }
 

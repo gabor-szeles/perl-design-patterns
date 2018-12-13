@@ -1,4 +1,4 @@
-package Doggo;
+package doggo;
 use strict;
 use warnings;
 use Data::Dumper;

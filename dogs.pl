@@ -6,15 +6,15 @@ use warnings;
 use Data::Dumper;
  
 use shibe;
-use CatAdapter;
-use ProtectorProxy;
+use catadapter;
+use protectorproxy;
 
-my $shibe = CatAdapter->new;
+my $shibe = catadapter->new;
 $shibe->bork;
 $shibe->woof;
 $shibe->bamboozle;
 
-my $corgi_protector = ProtectorProxy->new(112313);
+my $corgi_protector = protectorproxy->new(112313);
 my $protected_corgi = $corgi_protector->authorize();
 if ($protected_corgi !=0) {
     $protected_corgi->woof;
